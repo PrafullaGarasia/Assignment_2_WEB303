@@ -18,17 +18,17 @@ $(document).ready(function()
   document.getElementById("content").innerHTML = request.responseText;
   }
   }
-  $("#prospect").onclick("click",function()
+  $("#prospect").on("click",function()
   {
     $("#content").fadeIn("show");
     $("#content").load("prospect.html");
   });
-  $("convert").onclick("click",function()
+  $("convert").on("click",function()
   {
     $("#content").fadeIn("show");
     $("#content").load("convert.html");
   });
-  $("#retain").onclick("click",function()
+  $("#retain").on("click",function()
   {
     $("#content").fadeIn("show");
     $("#content").load("retain.html");
